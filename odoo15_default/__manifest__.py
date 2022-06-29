@@ -145,7 +145,7 @@
     # syntax: the same as git clone
     'git-repos': [
         'https://github.com/regaby/cl-odoo15.git',
-        'https://github.com/regaby/odoo-custom.git -b 15.0-moldeo',
+        'https://github.com/regaby/odoo-custom.git -b 15.0-adhoc',
         'https://github.com/hormigaG/odoo-argentina-ce.git -b 15.0_refact',
         'https://github.com/OCA/reporting-engine.git',
         'https://github.com/OCA/stock-logistics-warehouse.git',
