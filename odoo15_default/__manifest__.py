@@ -250,7 +250,7 @@
         'https://github.com/ingadhoc/multi-store ingadhoc-multi-store',
 
 	#exra cost
-	'https://github.com/nahe-consulting-group/nahe_variant_extra_cost.git -b main'
+	'https://github.com/nahe-consulting-group/nahe_variant_extra_cost.git -b main',
 
         # themes
         'https://github.com/odoo/design-themes.git odoo-themes',
