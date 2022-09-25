@@ -52,8 +52,8 @@
         # You should use 2 worker threads + 1 cron thread per available CPU,
         # and 1 CPU per 10 concurent users.
         # if ommited oe will calculate workers and cron´s based on # of cpu
-        #        'workers = 0',
-        #        'max_cron_threads = 1',
+                'workers = 3',
+                'max_cron_threads = 1',
 
         # Number of requests a worker will process before being recycled and
         # restarted. Defaults to 8192 if ommited
@@ -62,26 +62,26 @@
         # Maximum allowed virtual memory per worker. If the limit is exceeded,
         # the worker is killed and recycled at the end of the current request.
         # Defaults to 640MB
-        #        'limit_memory_soft = 2147483648',
+                'limit_memory_soft = 2147483648',
 
         # Hard limit on virtual memory, any worker exceeding the limit will be
         # immediately killed without waiting for the end of the current request
         # processing. Defaults to 768MB.
-        #        'limit_memory_hard = 2684354560',
+                'limit_memory_hard = 2684354560',
 
 
         # Prevents the worker from using more than CPU seconds for each request.
         # If the limit is exceeded, the worker is killed. Defaults to 60 sec.
-        #        'limit_time_cpu = 60',
+                'limit_time_cpu = 60',
 
         # Prevents the worker from taking longer than seconds to process a request.
         # If the limit is exceeded, the worker is killed. Defaults to 120. Differs
         # from --limit-time-cpu in that this is a "wall time" limit including e.g.
         # SQL queries.
-        #        'limit_time_real = 120',
+                'limit_time_real = 120',
 
         # default CSV separator for import and export
-        #        'csv_internal_sep = ,',
+                'csv_internal_sep = ,',
 
         # disable loading demo data for modules to be installed
         #        'without_demo = False',
@@ -248,6 +248,9 @@
         #'https://github.com/ingadhoc/odoo-argentina-ce ingadhoc-odoo-argentina-ce',
 	'https://github.com/ingadhoc/odoo-argentina ingadhoc-odoo-argentina',
         'https://github.com/ingadhoc/multi-store ingadhoc-multi-store',
+
+	#exra cost
+	'https://github.com/nahe-consulting-group/nahe_variant_extra_cost.git -b main'
 
         # themes
         'https://github.com/odoo/design-themes.git odoo-themes',
